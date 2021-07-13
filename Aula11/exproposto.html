@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Em qual País</title>
+</head>
+<body>
+   <h1>Você é estrangeiro?</h1>
+   Digite o nome do país em que você mora: <input type="text" name="país" id="país">
+   <input type="button" value="Verificar" onclick = "calcular()">
+   <div id = "res"></div>
+
+   <script>
+       
+
+       function calcular(){
+
+        var txpaís = window.document.getElementById('país')
+        var cxpaís = (txpaís.value)
+        var res = window.document.getElementById('res')
+        res.innerHTML = `Seu país é ${cxpaís}`
+        if(cxpaís == 'Brasil') {
+            res.innerHTML = 'Portanto, você é Brasileiro'
+        }
+        else{
+            res.innerHTML = 'Você é estrangeiro'
+        }
+
+
+
+       }
+
+
+
+   </script>
+
+    
+</body>
+</html>

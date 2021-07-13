@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verificador de idade</title>
+    <link rel="stylesheet" href="estilo.css"> <!-- Ao clicar com "shift" e colocar o cursor em cima
+    é possível criar um novo arquivo com o estilo do site -->
+</head>
+<body>
+    <header>
+        <h1> Verificador de idade</h1>
+
+    </header>
+    <section>
+        <div>
+            <p> Ano de Nascimento: 
+                <input type="number" name="txtano" id="txtano" min="0" >
+            </p>
+            <p>Sexo:
+
+                <input type="radio"  name="radsex" id="masc" checked> <!-- Em "type" ao colocar "radio" irá
+                     criar aquele circulo para marcar a opção. O "Checked" é opcional, é uma pré-seleção
+                     para que induza ao usuário a deixar a seleção". É dado o nome de "radsex" para esta 
+                     opção, -->
+                
+                                
+                <label for="mas"> Masculino</label> <!-- O label representa uma "etiqueta" para outra função, 
+                    no caso é baseado na opção "radio" neste código. -->
+                <input type="radio" name="radsex" id="fem"> 
+                <label for="fem"> Feminino</label>
+                <!--O "name" deve se igual, pois caso não seja, irá apresentar problema na execução. Por se tratar do radio, ao ter
+                o nome diferente, ao selecionar um ficará marcado sem poder tirar a seleção.-->
+            </p>
+            <p>
+                <input type="button" value="Verificar" onclick="verificar()"> <!-- É colocado o "onclick" para
+                disparar um evento quando pressionar "verificar", isso será executado no javascript-->
+            </p>
+            <div id="res">
+                Preencha os dados acima para ver o resultado!
+
+
+            </div>      
+
+
+            
+            
+
+        </div>
+        <div id="res">
+
+        </div>
+
+    </section>
+    <footer>
+        <p>&copy; CursoemVideo</p>
+        <script src="script.js"></script> <!-- Ao clicar com "shift" e colocar o cursor em cima
+            é possível criar um novo arquivo com a interação(JavaScript) para o site -->
+
+    </footer>
+    
+    
+</body>
+</html>
