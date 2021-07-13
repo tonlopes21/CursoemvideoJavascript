@@ -8,6 +8,9 @@ function tabuada() {
         window.alert(`Tudo ok`)
 
 
+        //alteração
+
+
 
     }
 
